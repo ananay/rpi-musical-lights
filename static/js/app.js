@@ -30,6 +30,13 @@ $(document).ready(() => {
         });
     });
 
+    $("#lights_on").click(() => {
+        $.get('/lightson', (r) => {
+            $(".box").removeClass('active');
+            $("#lights_on").addClass('active');
+        });
+    });
+
     $("#off").click(() => {
         $.get('/kill', (r) => {
             $(".box").removeClass('active');
