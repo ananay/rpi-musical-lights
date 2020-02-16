@@ -27,7 +27,8 @@ def scroll():
     return ('scroll')
 
 
-@app.route("/status"):
+@app.route("/status")
+def status():
     return (mode)
 
 @app.route("/kill")
