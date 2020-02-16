@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", "Segoe UI", "sans-serif";
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+body {
+    overflow: hidden;
+    background: #202124;
+    color: #fff;
+}
+
+.wrapper {
+    margin-top: 100px;
+    text-align: center;
+    width: 800px;
+}
+
+.boxes {
+    margin-top: 80px;
+}
+
+.box {
+    padding: 30px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 200px;
+    display: inline-block;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.active {
+    background: #2c3e50;
+}
