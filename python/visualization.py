@@ -9,16 +9,13 @@ import dsp
 import led
 import sys
 
-visType = "spectrum"
+visType = sys.argv[1]
 
-def visType():
-    
+_time_prev = time.time() * 1000.0
+"""The previous time that the frames_per_second() function was called"""
 
-    _time_prev = time.time() * 1000.0
-    """The previous time that the frames_per_second() function was called"""
-
-    _fps = dsp.ExpFilter(val=config.FPS, alpha_decay=0.2, alpha_rise=0.2)
-    """The low-pass filter used to estimate frames-per-second"""
+_fps = dsp.ExpFilter(val=config.FPS, alpha_decay=0.2, alpha_rise=0.2)
+"""The low-pass filter used to estimate frames-per-second"""
 
 
 def frames_per_second():
