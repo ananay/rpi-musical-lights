@@ -32,7 +32,7 @@ def scroll():
 @app.route("/lightson")
 def lights_on():
     subprocess.Popen(['killall', 'python'])
-    subprocess.Popen(['sudo','python', 'python/visualization.py', 'scroll'], stdout=subprocess.PIPE)
+    subprocess.Popen(['sudo','python', 'python/strandtest.py'], stdout=subprocess.PIPE)
     mode = 'lights_on'
     return ('lights_on')
 
